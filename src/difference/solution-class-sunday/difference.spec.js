@@ -22,20 +22,20 @@ describe('checks arrays which include repeating elements', () => {
   it('arrays of strings including repeating', () => {
     const actual = difference(
       ['hello', 'hello', 'thank you', 'goodbye'],
-      ['hi', 'hi', 'thank you', 'bye'],
+      ['hi', 'thank you', 'bye'],
     );
-    expect(actual).toEqual(['hello', 'hello', 'goodbye']);
+    expect(actual).toEqual(['hello', 'goodbye']);
   });
   it('arrays of numbers including repeating', () => {
     const actual = difference([3, 3, 5, 5, 7, 9], [5, 7, 9]);
-    expect(actual).toEqual([3, 3]);
+    expect(actual).toEqual([3]);
   });
   it('arrays of values of different types including repeating', () => {
     const actual = difference(
       ['hello', null, null, true, true, false, false, 1, 1, 2],
       [null, false, 1, 2, 'hello'],
     );
-    expect(actual).toEqual([true, true]);
+    expect(actual).toEqual([true]);
   });
 });
 
@@ -60,10 +60,6 @@ describe('testing edge cases', () => {
     expect(actual).toEqual([null, 2]);
   });
   it('arrays with 0 and null', () => {
-    const actual = difference([0, 1, 2, true], [null, 2, true]);
-    expect(actual).toEqual([0, 1]);
-  });
-  it('arrays with ', () => {
     const actual = difference([0, 1, 2, true], [null, 2, true]);
     expect(actual).toEqual([0, 1]);
   });

@@ -18,10 +18,15 @@
  */
 
 export const difference = (array = [], values = []) => {
-  // create an array where we will put the filtered valued
+  // create a function that checks if the element is not a part of the second array
   const isDifferentItem = (item) => {
     return !values.includes(item);
   };
-  const newArr = array.filter(isDifferentItem);
-  return newArr;
+  // create array that only includes the unique items
+  const filteredArr = array.filter(isDifferentItem);
+  // remove duplicates from the filtered array
+  const arrNoDuplicates = (arr) => {
+    return [...new Set(arr)];
+  };
+  return arrNoDuplicates(filteredArr);
 };

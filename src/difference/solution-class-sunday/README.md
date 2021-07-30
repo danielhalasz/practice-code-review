@@ -11,13 +11,15 @@ Repeated values are not duplicated in the return value, and the order of result 
 
 1. Select the values from the second array that are not included into the first one
 2. Create an array which contains only selected items
+3. Remove duplicates
 
 ---
 
 ## Implementation
 
-1. Create the criteria for filtering – values not included into first array
-2. Create a new array with using the ‘filter’ array method
+1. Create the criteria for filtering – values should not be included into first array
+2. Create a new array with using the `filter` array method
+3. Use `set` method to remove duplicates from the new array
 
 ---
 
@@ -32,11 +34,16 @@ const firstStoreUniqueItems = (firstStore = [], secondStore = []) => {
     return !secondStore.includes(item);
   };
   const uniqueAssortment = firstStore.filter(isUniqueItem);
-  return uniqueAssortment;
+  const uniqueNoDuplicate = (arr) => {
+    return [...new Set(arr)];
+  };
+  return uniqueNoDuplicate(uniqueAssortment);
 };
 ```
 
 ## Inspiration
+
+<https://levelup.gitconnected.com/7-ways-to-remove-duplicates-from-array-in-javascript-cea4144caf31>
 
 <!--
   was there any code, blog post, video, ... that inspired your solution?
