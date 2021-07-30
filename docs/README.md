@@ -23,6 +23,8 @@
   - example-built-in-sort
     - [sort-numbers.js](#srcsort-numbersexample-built-in-sortsort-numbersjs)
 - split-object
+  - split-object-JT
+    - [split-object-JT.js](#srcsplit-objectsplit-object-JTsplit-object-JTjs)
 
 ---
 
@@ -109,14 +111,14 @@ Does not need to support: NaN, Infinity, -Infinity.
 
 ```js
 sortNumbers([1.5, 1, -1.5, 0, -1]);
-// -> [-1.5, -1, 0, 1, 1.5]
+ -> [-1.5, -1, 0, 1, 1.5]
 ```
 
 **Example**
 
 ```js
 sortNumbers([-1, 0, 1]);
-// -> [-1, 0, 1]
+ -> [-1, 0, 1]
 ```
 
 </details>
@@ -126,6 +128,18 @@ sortNumbers([-1, 0, 1]);
 ---
 
 # /split-object
+
+## /split-object-JT
+
+<details><summary><a href="../../src/split-object/split-object-JT/split-object-JT.js" id="srcsplit-objectsplit-object-JTsplit-object-JTjs">../src/split-object/split-object-JT/split-object-JT.js</a></summary>
+
+<a name="solutionName"></a>
+
+## solutionName
+
+</details>
+
+---
 
 ---
 
