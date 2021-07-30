@@ -18,6 +18,8 @@
   - deepflat-daniel
     - [deepflat-daniel.js](#srcdeep-flatdeepflat-danieldeepflat-danieljs)
 - difference
+  - solution-class-sunday
+    - [difference.js](#srcdifferencesolution-class-sundaydifferencejs)
 - intersection
   - for-loops-rayane
     - [intersection-rayane.js](#srcintersectionfor-loops-rayaneintersection-rayanejs)
@@ -74,6 +76,43 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 ---
 
 # /difference
+
+## /solution-class-sunday
+
+<details><summary><a href="../../src/difference/solution-class-sunday/difference.js" id="srcdifferencesolution-class-sundaydifferencejs">../src/difference/solution-class-sunday/difference.js</a></summary>
+
+<a name="difference"></a>
+
+## difference ⇒ <code>Array</code>
+
+Creates an array of values that are in the first array, but not not in the second array.
+
+Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
+
+**Note:** This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param    | Type               | Default         | Description            |
+| -------- | ------------------ | --------------- | ---------------------- |
+| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.  |
+| [values] | <code>Array</code> | <code>[]</code> | The values to exclude. |
+
+**Example**
+
+```js
+difference([2, 1], [2, 3]); //  [1]
+```
+
+**Example**
+
+```js
+difference([1, 2, 1], [2, 3]); //  [1]
+```
+
+</details>
+
+---
 
 ---
 
