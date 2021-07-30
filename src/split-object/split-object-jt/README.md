@@ -37,9 +37,9 @@ Each entry in the array will be one key/value pair from the object.
 
 ## Implementation
 
-- for of        - 
+- for of -
 
-- Object.keys() - 
+- Object.keys() -
 - .push()
 
 ## Use Cases
@@ -50,9 +50,8 @@ console.log(copiaArrayObj)
 
 ## Inspiration
 
--  
-- 
-
+-
+-
 
 <!--
   was there any code, blog post, video, ... that inspired your solution?

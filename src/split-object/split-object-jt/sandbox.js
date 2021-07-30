@@ -1,4 +1,4 @@
-import { splitObject } from './split-object-JT.js';
+import { splitObject } from './split-object-jt.js';
 
 const superRaw = { name: 'robs', age: 25, tall: true, userName: 'sbor' };
 
