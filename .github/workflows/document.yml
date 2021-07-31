@@ -5,11 +5,15 @@ name: Document
 on:
   pull_request:
     branches: [master, main]
+    types: [closed]
   push:
     branches: [master, main]
 
 jobs:
   document:
+    # https://stackoverflow.com/a/67833464
+    if: ${{ github.event.pull_request.merged }}
+
     runs-on: ubuntu-18.04
 
     strategy:
