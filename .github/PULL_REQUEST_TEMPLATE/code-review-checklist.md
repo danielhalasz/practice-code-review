@@ -33,21 +33,19 @@ Before the reviewer merges this PR to main/master, all of these boxes must be ch
   - [ ] The return value is documented with a type
   - [ ] The return value has a clear description
 - **README**
-  - [ ] The documentation is rendered into the README
-  - [ ] Docs were generated just before pushing
-  - [ ] Docs in the README matches the JSDoc comment
-  - [ ] The README contains at least one use case
+  - [ ] All the sections in the solution README are complete
+  - [ ] Descriptions in the README are thorough and clear
+  - [ ] There is at least 2 use-cases
 - **Unit Tests**
   - [ ] Unit tests are present
-  - [ ] There are at least 8 test cases
+  - [ ] There are at least 20 test cases
   - [ ] All `describe`s and `it`s have clear and helpful names
   - [ ] All test names actually describe what is being tested
   - [ ] Tests are grouped logically using `describe`
   - [ ] There is only one `expect` inside every `it`
   - [ ] There is no logic (loops, conditionals, ...) in the test cases
   - [ ] Side-effects are tested, if necessary
-  - [ ] Tests were run just before pushing
-  - [ ] All tests pass
+  - [ ] All tests pass in the CI check
   - [ ] Tricky edge cases are tested (extra credit)
 
 ## Strategy
@@ -69,12 +67,10 @@ Before the reviewer merges this PR to main/master, all of these boxes must be ch
 > The code used to write the solution
 
 - **Formatting**
-  - [ ] The code was formatted just before pushing
-  - [ ] No errors occurred while formatting the code
+  - [ ] No formatting errors appear in the linting check
 - **Linting**
-  - [ ] There should be no linting errors or warnings
+  - [ ] There should be no linting errors or warnings in the CI check
   - [ ] Spelling should be correct in all code, comments and docstrings
-  - [ ] The code was linted just before pushing
 - **The solution file**
   - [ ] Has a JSDoc comment
   - [ ] Has an exported function

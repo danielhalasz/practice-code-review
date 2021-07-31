@@ -9,6 +9,15 @@
       "runtimeExecutable": "npm",
       "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "current non-spec file",
+      "args": ["${file}"],
+      "runtimeExecutable": "node",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
