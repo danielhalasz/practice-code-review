@@ -33,25 +33,35 @@ Each entry in the array will be one key/value pair from the object.
 
 1. Create a new empty array to store the objects key/value pairs.
 2. Loop for iterating the keys of the argument object.
-3. Push the key values(key/value) as an object into the newArray.
+3. Mapping the objects key/value,
+4. Push the mapped key values(key/value) as an object into the newArray.
 
 ## Implementation
 
-- for of -
-
-- Object.keys() -
+- for of
+- Object.keys()
+- .map()
 - .push()
 
 ## Use Cases
+I think that it is very useful to separate the array object into an array of objects because it makes data more accesible to manipulate it.
+If we state that each array is a 'profile card of something or someone', then we could use it later for comparing or finding common information and then manipulate data more easy.
 
-const
 
-console.log(copiaArrayObj)
+const splitObject = (toSeparate = {}) => {
+  const arr1 = Object.keys(toSeparate);
+  const arrObj = arr1.map(function (key) {
+    return { [key]: toSeparate[key] };
+  });
+  return arrObj;
+};
+
+
 
 ## Inspiration
 
--
--
+- This article was useful [Dimitri Pavlutin](https://dmitripavlutin.com/access-object-keys-values-entries/)
+- This article from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) too for my other solution of the same problem :D
 
 <!--
   was there any code, blog post, video, ... that inspired your solution?
