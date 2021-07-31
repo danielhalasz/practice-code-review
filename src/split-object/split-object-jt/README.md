@@ -31,7 +31,7 @@ Each entry in the array will be one key/value pair from the object.
 
 ## Strategy
 
-1. Create a new empty array to store the objects key/value pairs.
+1. Create a new array to store the objects key/value pairs.
 2. Loop for iterating the keys of the argument object.
 3. Mapping the objects key/value,
 4. Push the mapped key values(key/value) as an object into the newArray.
@@ -45,9 +45,9 @@ Each entry in the array will be one key/value pair from the object.
 
 ## Use Cases
 I think that it is very useful to separate the array object into an array of objects because it makes data more accesible to manipulate it.
-If we state that each array is a 'profile card of something or someone', then we could use it later for comparing or finding common information and then manipulate data more easy.
+If we state that each array is a 'profile card' of a real object or a person, then we could use it later for comparing or finding common information between different arrays and then manipulate data more easy. Maybe we want to compare which countries has visited X person and Y person or comparing who is the youngest, etc...
 
-
+```js
 const splitObject = (toSeparate = {}) => {
   const arr1 = Object.keys(toSeparate);
   const arrObj = arr1.map(function (key) {
@@ -55,6 +55,10 @@ const splitObject = (toSeparate = {}) => {
   });
   return arrObj;
 };
+
+const arg = { name: 'Evan', age: undefined, country: 'U.S.A.' };
+console.log(splitObject(arg));
+```
 
 
 
